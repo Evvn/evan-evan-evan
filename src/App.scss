@@ -1,0 +1,149 @@
+$black: #212121;
+$white: #F0F4F3;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $black;
+  letter-spacing: 1px;
+  font-family: "Sweden Sans", sans-serif;
+  background-color: $white;
+  margin-top: 100px;
+}
+
+.bike {
+  background-image: url('/bike.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2 {
+  font-family: "Druk Text Wide", sans-serif;
+}
+
+h3, h4, h5 {
+  font-family: "Sweden Sans", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.my-name {
+  position: fixed;
+  z-index: 13;
+  top: 0px;
+  left: 15px;
+  font-size: 50px;
+  line-height: 0;
+}
+
+.links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    border-bottom: 2px solid $black;
+  }
+
+  .squiggle-hover-black:hover {
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#212121' stroke-width='2' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 .8em;
+    background-size: auto 5px;
+    background-repeat: repeat-x;
+  }
+}
+
+.work-page {
+  margin: 0 30px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  h1 {
+    padding-top: 75px;
+  }
+}
+
+.mr-yum {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "mr-yum-desc phone-view" "tablet-view tablet-view";
+
+  .mr-yum-desc {
+    grid-area: mr-yum-desc;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+  }
+
+  .phone-view {
+    grid-area: phone-view;
+    width: 45vw;
+
+    .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img {
+      margin-top: 10vw;
+      width: 45vw;
+      max-width: 500px;
+    }
+  }
+
+  .tablet-view {
+    grid-area: tablet-view;
+    width: 90vw;
+    margin: 0 auto;
+
+    .react-slideshow-fade-images-wrap {
+      margin: 0 auto;
+      width: 90vw;
+    }
+
+    .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap * {
+      width: 90vw;
+      max-width: 1000px;
+    }
+  }
+
+  // .mr-yum-info {
+  //   position: relative;
+  //   margin-right: 55vw;
+  // }
+  //
+  // .phone-images {
+  //   position: relative;
+  //   top: 0;
+  //   width: 45vw;
+  //   max-width: 500px;
+  //   margin: 0 auto;
+  //   margin-right: 0;
+  // }
+  //
+  // .tablet-images {
+  //   width: 90vw;
+  //   max-width: 1000px;
+  //   margin: 0 auto;
+  //
+  //   .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap * {
+  //     width: 90vw;
+  //     max-width: 1000px;
+  //   }
+  // }
+}
