@@ -5,7 +5,7 @@
 body {
   color: #212121;
   letter-spacing: 1px;
-  font-family: "Apercu Mono", "Courier", sans-serif;
+  font-family: "Apercu", "Courier", sans-serif;
   background-color: #F0F4F3;
   margin-top: 100px;
 }
@@ -176,11 +176,17 @@ select:-webkit-autofill:focus {
 .work-page {
   font-size: 16px;
   line-height: 1.5;
-  width: 90vw;
+  width: 80vw;
   margin: 150px auto;
 }
+.work-page .work-desc {
+  word-wrap: break-word;
+  width: 40vw;
+  margin: 0 auto;
+}
 .work-page h1 {
-  margin: 40px 0;
+  width: 100%;
+  text-align: center;
   font-size: 62px;
 }
 .mr-yum {
@@ -196,6 +202,9 @@ select:-webkit-autofill:focus {
   min-width: 250px;
   margin: 0 auto;
   max-width: 550px;
+}
+.mr-yum .mr-yum-desc h1 {
+  text-align: left;
 }
 .mr-yum .phone-view {
   grid-area: phone-view;
@@ -224,6 +233,9 @@ select:-webkit-autofill:focus {
 @media screen and (max-width: 768px) {
   .work-page {
     margin: 0 auto;
+  }
+  .work-page .work-desc {
+    width: 60vw;
   }
 
   .mr-yum {
@@ -269,6 +281,10 @@ select:-webkit-autofill:focus {
   .home-page svg {
     margin: 0 auto;
     width: 200vw;
+  }
+
+  .work-page .work-desc {
+    width: 80vw;
   }
 
   .mr-yum .react-slideshow-container {

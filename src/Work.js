@@ -36,6 +36,8 @@ class Work extends React.Component {
 
           <MrYum />
 
+          {/* <TalkAboutSomething /> */}
+
       </div>
     )
   }
