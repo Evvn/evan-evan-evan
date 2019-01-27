@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Noe Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/NoeDisplay-Black.OTF');
+  src: local('Noe Display'), local('NoeDisplay'),
+       url('/fonts/NoeDisplay-Black.OTF') format('opentype')
+}
+
+@font-face {
+  font-family: "Druk Text Wide";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/DrukText-Medium.ttf');
+  src: local('Druk Text Wide'), local('DrukTextWide'),
+       url('/fonts/DrukText-Medium.ttf') format('ttf')
+}
+
+@font-face {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Apercu_Regular.otf');
+  src: local('Apercu'),
+       url('/fonts/Apercu_Regular.otf') format('opentype')
+}
+
 $black: #212121;
 $white: #F0F4F3;
 
