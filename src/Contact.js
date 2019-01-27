@@ -104,7 +104,7 @@ class Contact extends React.Component {
       node.parentNode.removeChild(node)
     })
 
-    let node = document.createElement('h2')
+    let node = document.createElement('p')
     let textnode = document.createTextNode('Talk to you soon!')
     node.appendChild(textnode)
     document.querySelector('form').appendChild(node)

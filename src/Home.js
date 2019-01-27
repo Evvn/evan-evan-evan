@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (<div className="home-page">
 
       <h1>
-        Front end focused web dev building web + native apps with React.
+        Front end focused web dev building web & native apps with React.
       </h1>
 
       <p className="location">

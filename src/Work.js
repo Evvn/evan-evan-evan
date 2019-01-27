@@ -20,7 +20,7 @@ class Work extends React.Component {
           <h1>Work</h1>
 
           <p className="work-desc">
-            My name is Evan, and I'm a developer currently living in Melbourne. I'm happiest working on front end web projects using React and cross-platform mobile applications using React Native + Expo.
+            My name is Evan, and I'm a developer currently living in Melbourne. I'm happiest working on front end web projects using React and cross-platform mobile applications using React Native + Expo, but I've also had experience in doing backend work with Ruby on Rails.
           </p>
 
           <p className="work-desc">

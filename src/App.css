@@ -30,7 +30,7 @@ body {
 .home-page .wrapper {
   text-align: center;
   position: fixed;
-  top: -10vw;
+  top: -100px;
   z-index: -1;
 }
 .home-page svg {
@@ -183,10 +183,6 @@ select:-webkit-autofill:focus {
   margin: 40px 0;
   font-size: 62px;
 }
-.work-page h3 {
-  line-height: 0.5;
-}
-
 .mr-yum {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -223,6 +219,64 @@ select:-webkit-autofill:focus {
 .mr-yum .tablet-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap * {
   width: 90vw;
   max-width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-page {
+    margin: 0 auto;
+  }
+
+  .mr-yum {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mr-yum-desc" "phone-view" "tablet-view";
+  }
+  .mr-yum .react-slideshow-container {
+    width: 500px;
+  }
+  .mr-yum .mr-yum-desc {
+    max-width: 90vw;
+    width: auto;
+    margin: 0;
+  }
+  .mr-yum .phone-view, .mr-yum .tablet-view {
+    margin: 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .mr-yum .phone-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img, .mr-yum .tablet-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+  }
+  .mr-yum .phone-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap *, .mr-yum .tablet-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap * {
+    width: 85vw;
+  }
+  .mr-yum .tablet-view .react-slideshow-container {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home-page h1 {
+    width: 95vw;
+  }
+  .home-page .wrapper {
+    text-align: center;
+    position: fixed;
+    top: -100px;
+    z-index: -1;
+  }
+  .home-page svg {
+    margin: 0 auto;
+    width: 200vw;
+  }
+
+  .mr-yum .react-slideshow-container {
+    width: 90vw;
+  }
+  .mr-yum .each-fade {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

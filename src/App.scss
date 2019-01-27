@@ -41,8 +41,8 @@ body {
   .wrapper{
     text-align:center;
     position: fixed;
-    top: -10vw;
-    z-index: -1
+    top: -100px;
+    z-index: -1;
   }
 
   svg{
@@ -223,7 +223,6 @@ select:-webkit-autofill:focus {
   }
 
   h3 {
-    line-height: 0.5;
   }
 }
 
@@ -269,4 +268,109 @@ select:-webkit-autofill:focus {
       max-width: 1000px;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    // background-color: cyan;
+  }
+
+  .work-page {
+    margin: 0 auto;
+  }
+
+  .mr-yum {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mr-yum-desc" "phone-view" "tablet-view";
+
+    .react-slideshow-container {
+      width: 500px;
+    }
+
+
+    .mr-yum-desc {
+      max-width: 90vw;
+      width: auto;
+      margin: 0;
+    }
+
+    .phone-view, .tablet-view {
+      margin: 0 auto;
+      width: auto;
+      max-width: none;
+
+      .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img {
+        width: 100%;
+        margin: 0 auto;
+        max-width: none;
+
+      }
+
+      .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap * {
+        width: 85vw;
+        // max-width: none;
+      }
+    }
+
+    .tablet-view {
+      .react-slideshow-container {
+        width: 85vw;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    // background-color: #dfa5fa;
+  }
+
+  .home-page {
+
+    h1 {
+      width: 95vw;
+    }
+
+    .wrapper{
+      text-align:center;
+      position: fixed;
+      top: -100px;
+      z-index: -1;
+    }
+
+    svg{
+      margin: 0 auto;
+      width: 200vw;
+      // height: 140vh;
+    }
+  }
+
+
+  .mr-yum {
+
+    .react-slideshow-container {
+      width: 90vw;
+    }
+
+    .each-fade {
+      margin: 0 auto;
+    }
+  }
+
+  // .mr-yum {
+  //
+  //   .phone-view {
+  //
+  //     .mr-yum .phone-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img {
+  //       width: auto;
+  //       max-width: none;
+  //     }
+  //   }
+  //
+  //   .tablet-view {
+  //     display: none;
+  //   }
+  // }
 }
