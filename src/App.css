@@ -5,9 +5,38 @@
 body {
   color: #212121;
   letter-spacing: 1px;
-  font-family: "Sweden Sans", sans-serif;
+  font-family: "Apercu Mono", "Courier", sans-serif;
   background-color: #F0F4F3;
   margin-top: 100px;
+}
+
+.home-page {
+  color: #F0F4F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.home-page h1 {
+  width: 50vw;
+  text-align: center;
+  text-shadow: -1px -1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121, 1px 1px 0 #212121;
+}
+.home-page .wrapper {
+  text-align: center;
+  position: fixed;
+  top: -10vw;
+  z-index: -1;
+}
+.home-page svg {
+  margin: 0 auto;
+  width: 140vw;
+  height: 130vh;
 }
 
 .bike {
@@ -18,12 +47,14 @@ body {
 }
 
 h1, h2 {
-  font-family: "Druk Text Wide", sans-serif;
+  font-family: "Noe Display", "Georgia", serif;
+  font-weight: 900;
 }
 
 h3, h4, h5 {
-  font-family: "Sweden Sans", sans-serif;
-  font-weight: bold;
+  font-family: "Noe Display", "Georgia", serif;
+  font-weight: 900;
+  font-size: 120%;
 }
 
 h1 {
@@ -31,15 +62,18 @@ h1 {
 }
 
 .my-name {
+  font-family: "Druk Text Wide", sans-serif;
   position: fixed;
   z-index: 13;
   top: 0px;
   left: 15px;
   font-size: 50px;
   line-height: 0;
+  text-shadow: -1px -1px 0 #F0F4F3, 1px -1px 0 #F0F4F3, -1px 1px 0 #F0F4F3, 1px 1px 0 #F0F4F3;
 }
 
 .links {
+  font-family: "Druk Text Wide", sans-serif;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -49,52 +83,133 @@ h1 {
   align-items: flex-end;
 }
 .links a {
+  z-index: 2;
   font-size: 20px;
   margin-bottom: 10px;
   text-decoration: none;
   color: inherit;
   font-weight: bold;
   border-bottom: 2px solid #212121;
+  text-shadow: -1px -1px 0 #F0F4F3, 1px -1px 0 #F0F4F3, -1px 1px 0 #F0F4F3, 1px 1px 0 #F0F4F3;
 }
 .links .squiggle-hover-black:hover {
   cursor: pointer;
   text-decoration: none;
   border-bottom-color: transparent;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#212121' stroke-width='2' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 0.8em;
+  background-position: 0 0.9em;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  outline: none;
+  -webkit-text-fill-color: #212121;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-page .alt-contact {
+  font-family: "Druk Text Wide", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
+}
+.contact-page .btnCont {
+  text-align: center;
+}
+.contact-page button {
+  border: 3px solid #212121;
+  width: 250px;
+  font-size: 20px;
+  font-family: inherit;
+  padding-top: 5px;
+}
+.contact-page input, .contact-page textarea {
+  margin-bottom: 40px;
+  width: 50vw;
+  min-width: 300px;
+  font-family: inherit;
+  font-size: 24px;
+  color: #212121;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #212121;
+}
+.contact-page input::placeholder, .contact-page textarea::placeholder {
+  color: #212121;
+}
+.contact-page input:focus, .contact-page textarea:focus, .contact-page button:focus {
+  outline: none;
+}
+.contact-page textarea {
+  resize: none;
+}
+.contact-page img {
+  width: 35px;
+  margin-bottom: -10px;
+  border-bottom: 3px solid #212121;
+}
+.contact-page img:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#212121' stroke-width='2' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 1.2em;
   background-size: auto 5px;
   background-repeat: repeat-x;
 }
 
 .work-page {
-  margin: 0 30px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
+  width: 90vw;
+  margin: 150px auto;
 }
 .work-page h1 {
-  padding-top: 75px;
+  margin: 40px 0;
+  font-size: 62px;
+}
+.work-page h3 {
+  line-height: 0.5;
 }
 
 .mr-yum {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr auto;
   grid-template-areas: "mr-yum-desc phone-view" "tablet-view tablet-view";
+  font-size: 16px;
 }
 .mr-yum .mr-yum-desc {
   grid-area: mr-yum-desc;
-}
-.mr-yum .mr-yum-desc h1 {
-  margin-bottom: 50px;
+  width: 30vw;
+  min-width: 250px;
+  margin: 0 auto;
+  max-width: 550px;
 }
 .mr-yum .phone-view {
   grid-area: phone-view;
-  width: 45vw;
+  width: 50vw;
 }
 .mr-yum .phone-view .react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap img {
-  margin-top: 10vw;
-  width: 45vw;
-  max-width: 500px;
+  margin-top: 150px;
+  width: 50vw;
+  max-width: 450px;
+  margin-left: 15px;
 }
 .mr-yum .tablet-view {
   grid-area: tablet-view;

@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <nav>
-            <h2 className="my-name">Evan.</h2>
+            <h2 className="my-name">Evan</h2>
             <div className="links">
               <Link to="/" className="squiggle-hover-black">Home</Link>
               <Link to="/work" className="squiggle-hover-black">Work</Link>

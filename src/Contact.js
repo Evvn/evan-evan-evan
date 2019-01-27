@@ -115,11 +115,9 @@ class Contact extends React.Component {
   render() {
 
     return (
-      <div className="contactPage">
+      <div className="contact-page">
 
-        <h1>
-          Contact me.
-        </h1>
+        <h1>Get in touch</h1>
 
         <form id={this.props.id} className={this.props.className} name={this.props.name} method={this.props.method} action={this.props.action}>
 
@@ -131,15 +129,13 @@ class Contact extends React.Component {
             value = {this.state.subject}
             error={this.state.errors.subject}/> */}
 
-          <TextArea placeholder="
-            Send me something nice :)
-            " name='message' id='message' required='required' className='form-control' rows='6' onChange={this.handleInputChange.bind(this)} value={this.state.message} error={this.state.errors.message}/>
+          <TextArea placeholder="Send me something nice" name='message' id='message' required='required' className='form-control' rows='4' onChange={this.handleInputChange.bind(this)} value={this.state.message} error={this.state.errors.message}/>
 
           <Button onClick={this.sentMessage.bind(this)} type='button' name='submit' className='btn btn-primary btn-lg' required='required'/>
 
         </form>
 
-        <h2>Or, contact me on <a href="https://www.linkedin.com/in/evanamezcua/" className="linkedin squiggle-hover-black"><img src="linkedin-in-brands.svg" alt="linkedin"/></a></h2>
+        <span className="alt-contact">Or, contact me on <a href="https://www.linkedin.com/in/evanamezcua/" className="linkedin squiggle-hover-black"><img src="linkedin-in-brands.svg" alt="linkedin"/></a></span>
 
       </div>
     )

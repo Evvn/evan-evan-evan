@@ -19,15 +19,15 @@ class Work extends React.Component {
 
           <h1>Work</h1>
 
-          <p>
+          <p className="work-desc">
             My name is Evan, and I'm a developer currently living in Melbourne. I'm happiest working on front end web projects using React and cross-platform mobile applications using React Native + Expo.
           </p>
 
-          <p>
+          <p className="work-desc">
             My most recent role has been working as the lead product engineer on a mobile web application written in React with a lean backend using Airtable to manage content, hosted using AWS.
           </p>
 
-          <p>
+          <p className="work-desc">
              When I'm not at work, you'll probably find me on my <span
                onMouseEnter={this.bikeOn}
                onMouseLeave={this.bikeOff}

@@ -78,11 +78,8 @@ class MrYum extends React.Component {
         <div className="mr-yum-desc">
           <div className="heading">
             <h1>Mr Yum</h1>
-            <h3>
-              Lead Product Engineer
-              <br/>
-              [ React, JavaScript ]
-            </h3>
+            <h3> Lead Product Engineer</h3>
+            <h3>React, JavaScript, Airtable</h3>
           </div>
 
           <div className="body">
@@ -95,7 +92,7 @@ class MrYum extends React.Component {
             <p>- Analytics and statistics logged in Airtable and Google Analytics</p>
 
             <p>
-              The application was built using the React JavaScript library to create a fluid user experience similar to a native mobile application. To manage and store the data for Mr Yum, Airtable was used as the backend for the application; this allowed for the app's data to be accessed easily by any members of the team quickly and efficiently without needing a developer on hand to help.
+              My role in this project was as the lead product engineer and developer, working closely with our creative director and product team. The application was built using the React JavaScript framework to create a fluid user experience similar to a native mobile application. To manage and store the data for Mr Yum, Airtable was used as the backend for the application; this allowed for the app's data to be accessed easily by any members of the team quickly and efficiently without needing a developer on hand to help.
             </p>
           </div>
         </div>
