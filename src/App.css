@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Noe Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NoeDisplay-Black.OTF");
+  src: local("Noe Display"), local("NoeDisplay"), url("/fonts/NoeDisplay-Black.otf") format("opentype"), url("/fonts/NoeDisplay-Black.ttf") format("truetype"), url("/fonts/NoeDisplay-Black.woff") format("woff"), url("/fonts/NoeDisplay-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Druk Text Wide";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/DrukTextWide-Medium.ttf");
+  src: local("Druk Text Wide"), local("DrukTextWide"), url("/fonts/DrukTextWide-Medium.otf") format("opentype"), url("/fonts/DrukTextWide-Medium.ttf") format("truetype"), url("/fonts/DrukTextWide-Medium.woff") format("woff"), url("/fonts/DrukTextWide-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Apercu-Regular.otf");
+  src: local("Apercu"), url("/fonts/Apercu-Regular") format("opentype"), url("/fonts/Apercu-Regular.ttf") format("truetype"), url("/fonts/Apercu-Regular.woff") format("woff"), url("/fonts/Apercu-Regular.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
 }
