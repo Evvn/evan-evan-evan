@@ -1,5 +1,6 @@
 import React from 'react'
 import MrYum from './MrYum.js'
+import TalkAboutSomething from './TalkAboutSomething.js'
 
 class Work extends React.Component {
 
@@ -20,11 +21,11 @@ class Work extends React.Component {
           <h1>Work</h1>
 
           <p className="work-desc">
-            My name is Evan, and I'm a developer currently living in Melbourne. I'm happiest working on front end web projects using React and cross-platform mobile applications using React Native + Expo, but I've also had experience in doing backend work with Ruby on Rails.
+            My name is Evan, and I'm a developer currently living in Melbourne. I'm happiest working on front end web projects built with React and cross-platform mobile applications utilizing React Native + Expo, but I've also had experience in doing backend work with Ruby on Rails and PostgreSQL.
           </p>
 
           <p className="work-desc">
-            My most recent role has been working as the lead product engineer on a mobile web application written in React with a lean backend using Airtable to manage content, hosted using AWS.
+            My most recent role has been working as the lead product engineer on a mobile web application written in React with a lean backend using Airtable to manage content, hosted with AWS.
           </p>
 
           <p className="work-desc">
@@ -36,7 +37,7 @@ class Work extends React.Component {
 
           <MrYum />
 
-          {/* <TalkAboutSomething /> */}
+          <TalkAboutSomething />
 
       </div>
     )

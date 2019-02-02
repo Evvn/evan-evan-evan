@@ -117,7 +117,7 @@ class Contact extends React.Component {
     return (
       <div className="contact-page">
 
-        <h1>Get in touch</h1>
+        <h1>Let's talk</h1>
 
         <form id={this.props.id} className={this.props.className} name={this.props.name} method={this.props.method} action={this.props.action}>
 
