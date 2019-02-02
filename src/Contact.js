@@ -11,7 +11,7 @@ class Contact extends React.Component {
     this.state = {
       name: '',
       email: '',
-      subject: 'Email from portfolio',
+      subject: 'Email from EvanEvanEvan',
       message: '',
       errors: {
         name: '',
