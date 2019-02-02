@@ -519,6 +519,9 @@ select:-webkit-autofill:focus {
   .work-page .mr-yum .body div:nth-of-type(2) p, .work-page .t-a-s .body div:nth-of-type(2) p {
     padding-bottom: 30px;
   }
+  .work-page .t-a-s .heading h1 {
+    font-size: 54px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
