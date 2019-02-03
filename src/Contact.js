@@ -18,7 +18,10 @@ class Contact extends React.Component {
         email: '',
         subject: '',
         message: ''
-      }
+      },
+      words: document.getElementsByClassName('word'),
+      wordArray: [],
+      currentWord: 0,
     }
   }
 
@@ -89,14 +92,14 @@ class Contact extends React.Component {
 
     document.querySelectorAll('input').forEach((node) => {
       node.style.pointerEvents = 'none';
-      node.style.backgroundColor = '#ffffff'
+      node.style.backgroundColor = '#F0F4F3'
       node.placeholder = ''
       node.disabled = true
 
     })
     document.querySelectorAll('textarea').forEach((node) => {
       node.style.pointerEvents = 'none';
-      node.style.backgroundColor = '#ffffff'
+      node.style.backgroundColor = '#F0F4F3'
       node.placeholder = ''
       node.disabled = true
     })
@@ -112,12 +115,98 @@ class Contact extends React.Component {
     this.setState({name: this.state.name, email: this.state.email, subject: '', message: this.state.message})
   }
 
+  componentDidMount() {
+    let words = this.state.words
+    let currentWord = this.state.currentWord
+    words[currentWord].style.opacity = 1;
+    for (let i = 0; i < words.length; i++) {
+      this.splitLetters(words[i]);
+    }
+
+    this.changeWord();
+
+    setInterval(this.changeWord, 2000);
+  }
+
+  changeWord = () => {
+    let words = this.state.words
+    let currentWord = this.state.currentWord
+    let wordArray = this.state.wordArray
+    let cw = wordArray[currentWord];
+    let nw = currentWord === words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+    for (let i = 0; i < cw.length; i++) {
+      this.animateLetterOut(cw, i);
+    }
+
+    for (let i = 0; i < nw.length; i++) {
+      nw[i].className = 'letter behind';
+      nw[0].parentElement.style.opacity = 1;
+      this.animateLetterIn(nw, i);
+    }
+
+    currentWord = (currentWord === wordArray.length-1) ? 0 : currentWord+1;
+    this.setState({
+      words: words,
+      currentWord: currentWord,
+      wordArray: wordArray
+    })
+  }
+
+  animateLetterIn(nw, i) {
+    setTimeout(function() {
+      nw[i].className = 'letter in';
+    }, 340+(i*80));
+  }
+
+  animateLetterOut(cw, i) {
+    setTimeout(function() {
+      cw[i].className = 'letter out';
+    }, i*80);
+  }
+
+  splitLetters(word) {
+    let wordArray = this.state.wordArray
+    let content = word.innerHTML;
+    word.innerHTML = '';
+    let letters = [];
+    for (let i = 0; i < content.length; i++) {
+      let letter = document.createElement('span');
+      letter.className = 'letter';
+      letter.innerHTML = content.charAt(i);
+      word.appendChild(letter);
+      letters.push(letter);
+    }
+
+    wordArray.push(letters);
+    this.setState({
+      wordArray: wordArray
+    })
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      words: [],
+      wordArray: [],
+      currentWord: 0,
+    })
+  }
+
   render() {
 
     return (
       <div className="contact-page">
 
-        <h1>Let's talk</h1>
+        <h1>
+          <div className="text">
+            <p>Let's</p>
+          <p>
+            <span className="word black">talk.</span>
+            <span className="word black">meet.</span>
+            <span className="word black">work.</span>
+            <span className="word black">chat.</span>
+          </p>
+        </div>
+        </h1>
 
         <form id={this.props.id} className={this.props.className} name={this.props.name} method={this.props.method} action={this.props.action}>
 

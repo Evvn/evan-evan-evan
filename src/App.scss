@@ -180,11 +180,69 @@ select:-webkit-autofill:focus {
 }
 
 .contact-page {
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -20px;
+
+  h1 {
+    font-size: 62px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+
+    .text {
+      position: absolute;
+      // width: 500px;
+      // left: 50%;
+      // margin-left: -225px;
+      margin-left: -130px;
+      height: 40px;
+      // top: 50%;
+      margin-top: -20px;
+      color: $black;
+    }
+
+    p {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+    }
+
+    .word {
+      position: absolute;
+      width: 200px;
+      margin-left: .3em;
+      opacity: 0;
+    }
+
+    .letter {
+      display: inline-block;
+      position: relative;
+      float: left;
+      transform: translateZ(25px);
+      transform-origin: 50% 50% 25px;
+    }
+
+    .letter.out {
+      transform: rotateX(90deg);
+      transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .letter.behind {
+      transform: rotateX(-90deg);
+    }
+
+    .letter.in {
+      transform: rotateX(0deg);
+      transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .dark {
+      color: $black;
+    }
+  }
 
   .alt-contact {
     font-family: "Druk Text Wide", sans-serif;
@@ -199,6 +257,8 @@ select:-webkit-autofill:focus {
 
   button {
     border: 3px solid $black;
+    color: $white;
+    background-color: $black;
     width: 250px;
     font-size: 20px;
     font-family: inherit;
@@ -438,16 +498,21 @@ select:-webkit-autofill:focus {
     // background-color: cyan;
   }
 
+  .my-name {
+    font-size: 38px;
+  }
+
   .home-page {
 
     h1 {
+      margin-top: 50px;
       width: 95vw;
     }
 
     .wrapper{
       text-align:center;
       position: fixed;
-      top: -100px;
+      top: -90px;
       z-index: -1;
     }
 
@@ -460,6 +525,11 @@ select:-webkit-autofill:focus {
 
   .work-page {
     margin: 0 auto;
+    margin-top: 110px;
+
+    h1 {
+      font-size: 52px;
+    }
 
     .work-desc {
       width: 70vw;
@@ -494,6 +564,44 @@ select:-webkit-autofill:focus {
         h1 {
         font-size: 54px;
         }
+      }
+    }
+  }
+
+  .contact-page {
+    h1 {
+      font-size: 52px;
+      margin-top: 60px;
+    }
+
+    .text {
+      padding-left: 15px;
+    }
+
+    .form-group, form {
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    button {
+      width: 50vw;
+    }
+
+    input, textarea {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 0;
+      width: 80vw;
+    }
+
+    .alt-contact {
+      font-size: 24px;
+      width: 80vw;
+      text-align: center;
+
+      img {
+        width: 30px;
+        margin-bottom: -7px;
       }
     }
   }

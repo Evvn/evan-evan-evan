@@ -142,6 +142,52 @@ select:-webkit-autofill:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -20px;
+}
+.contact-page h1 {
+  font-size: 62px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 80px;
+}
+.contact-page h1 .text {
+  position: absolute;
+  margin-left: -130px;
+  height: 40px;
+  margin-top: -20px;
+  color: #212121;
+}
+.contact-page h1 p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.contact-page h1 .word {
+  position: absolute;
+  width: 200px;
+  margin-left: 0.3em;
+  opacity: 0;
+}
+.contact-page h1 .letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.contact-page h1 .letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.contact-page h1 .letter.behind {
+  transform: rotateX(-90deg);
+}
+.contact-page h1 .letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-page h1 .dark {
+  color: #212121;
 }
 .contact-page .alt-contact {
   font-family: "Druk Text Wide", sans-serif;
@@ -154,6 +200,8 @@ select:-webkit-autofill:focus {
 }
 .contact-page button {
   border: 3px solid #212121;
+  color: #F0F4F3;
+  background-color: #212121;
   width: 250px;
   font-size: 20px;
   font-family: inherit;
@@ -479,13 +527,18 @@ select:-webkit-autofill:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .my-name {
+    font-size: 38px;
+  }
+
   .home-page h1 {
+    margin-top: 50px;
     width: 95vw;
   }
   .home-page .wrapper {
     text-align: center;
     position: fixed;
-    top: -100px;
+    top: -90px;
     z-index: -1;
   }
   .home-page svg {
@@ -495,6 +548,10 @@ select:-webkit-autofill:focus {
 
   .work-page {
     margin: 0 auto;
+    margin-top: 110px;
+  }
+  .work-page h1 {
+    font-size: 52px;
   }
   .work-page .work-desc {
     width: 70vw;
@@ -521,6 +578,36 @@ select:-webkit-autofill:focus {
   }
   .work-page .t-a-s .heading h1 {
     font-size: 54px;
+  }
+
+  .contact-page h1 {
+    font-size: 52px;
+    margin-top: 60px;
+  }
+  .contact-page .text {
+    padding-left: 15px;
+  }
+  .contact-page .form-group, .contact-page form {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .contact-page button {
+    width: 50vw;
+  }
+  .contact-page input, .contact-page textarea {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 0;
+    width: 80vw;
+  }
+  .contact-page .alt-contact {
+    font-size: 24px;
+    width: 80vw;
+    text-align: center;
+  }
+  .contact-page .alt-contact img {
+    width: 30px;
+    margin-bottom: -7px;
   }
 }
 
