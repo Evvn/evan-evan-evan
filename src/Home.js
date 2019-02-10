@@ -10,7 +10,7 @@ class Home extends React.Component {
       </h1>
 
       <p className="location">
-        Melbourne, AU
+        Melbourne, Australia
       </p>
 
       <div className="wrapper">

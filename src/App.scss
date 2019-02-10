@@ -2,39 +2,23 @@
   font-family: "Noe Display";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/NoeDisplay-Black.OTF');
-  src: local('Noe Display'), local('NoeDisplay'),
-       url('/fonts/NoeDisplay-Black.otf') format('opentype'),
-       url('/fonts/NoeDisplay-Black.ttf') format('truetype'),
-       url('/fonts/NoeDisplay-Black.woff') format('woff'),
-       url('/fonts/NoeDisplay-Black.woff2') format('woff2')
-
+  src: url("/fonts/NoeDisplay-Black.OTF");
+  src: local('Noe Display'), local('NoeDisplay'), url("/fonts/NoeDisplay-Black.otf") format('opentype'), url("/fonts/NoeDisplay-Black.ttf") format('truetype'), url("/fonts/NoeDisplay-Black.woff") format('woff'), url("/fonts/NoeDisplay-Black.woff2") format('woff2');
 }
-
 @font-face {
   font-family: "Druk Text Wide";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/DrukTextWide-Medium.ttf');
-  src: local('Druk Text Wide'), local('DrukTextWide'),
-       url('/fonts/DrukTextWide-Medium.otf') format('opentype'),
-       url('/fonts/DrukTextWide-Medium.ttf') format('truetype'),
-       url('/fonts/DrukTextWide-Medium.woff') format('woff'),
-       url('/fonts/DrukTextWide-Medium.woff2') format('woff2')
+  src: url("/fonts/DrukTextWide-Medium.ttf");
+  src: local('Druk Text Wide'), local('DrukTextWide'), url("/fonts/DrukTextWide-Medium.otf") format('opentype'), url("/fonts/DrukTextWide-Medium.ttf") format('truetype'), url("/fonts/DrukTextWide-Medium.woff") format('woff'), url("/fonts/DrukTextWide-Medium.woff2") format('woff2');
 }
-
 @font-face {
   font-family: "Apercu";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Apercu-Regular.otf');
-  src: local('Apercu'),
-       url('/fonts/Apercu-Regular') format('opentype'),
-       url('/fonts/Apercu-Regular.ttf') format('truetype'),
-       url('/fonts/Apercu-Regular.woff') format('woff'),
-       url('/fonts/Apercu-Regular.woff2') format('woff2')
+  src: url("/fonts/Apercu-Regular.otf");
+  src: local('Apercu'), url("/fonts/Apercu-Regular") format('opentype'), url("/fonts/Apercu-Regular.ttf") format('truetype'), url("/fonts/Apercu-Regular.woff") format('woff'), url("/fonts/Apercu-Regular.woff2") format('woff2');
 }
-
 $black: #212121;
 $white: #F0F4F3;
 
@@ -67,43 +51,66 @@ body {
   h1 {
     width: 50vw;
     text-align: center;
-    text-shadow:
-     -1px -1px 0 $black,
-      1px -1px 0 $black,
-      -1px 1px 0 $black,
-       1px 1px 0 $black;
+    text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
   }
 
-
-  .wrapper{
-    text-align:center;
+  .wrapper {
+    text-align: center;
     position: fixed;
     top: -100px;
     z-index: -1;
   }
 
-  svg{
+  svg {
     margin: 0 auto;
     width: 140vw;
     height: 130vh;
     min-height: 550px;
     position: relative;
   }
+  // .location {
+  //   div {
+  //     max-height: 100px;
+  //   }
+  //
+  //   -webkit-animation: spin 10s linear infinite;
+  //   -moz-animation: spin 10s linear infinite;
+  //   animation: spin 10s linear infinite;
+  // }
+  // @-moz-keyframes spin {
+  //   100% {
+  //     -moz-transform: rotate(360deg);
+  //   }
+  // }
+  // @-webkit-keyframes spin {
+  //   100% {
+  //     -webkit-transform: rotate(360deg);
+  //   }
+  // }
+  // @keyframes spin {
+  //   100% {
+  //     -webkit-transform: rotate(360deg);
+  //     transform: rotate(360deg);
+  //   }
+  // }
 }
 
 .bike {
-  background-image: url('/bike.jpg');
+  background-image: url("/bike.jpg");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Noe Display", "Georgia", serif;
   font-weight: 900;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-family: "Noe Display", "Georgia", serif;
   font-weight: 900;
   font-size: 120%;
@@ -117,15 +124,11 @@ h1 {
   font-family: "Druk Text Wide", sans-serif;
   position: fixed;
   z-index: 13;
-  top: 0px;
+  top: 0;
   left: 15px;
   font-size: 50px;
   line-height: 0;
-  text-shadow:
-   -1px -1px 0 $white,
-    1px -1px 0 $white,
-    -1px 1px 0 $white,
-     1px 1px 0 $white;
+  text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
 }
 
 .links {
@@ -146,11 +149,7 @@ h1 {
     color: inherit;
     font-weight: bold;
     border-bottom: 2px solid $black;
-    text-shadow:
-     -1px -1px 0 $white,
-      1px -1px 0 $white,
-      -1px 1px 0 $white,
-       1px 1px 0 $white;
+    text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
   }
 
   .squiggle-hover-black:hover {
@@ -158,26 +157,23 @@ h1 {
     text-decoration: none;
     border-bottom-color: transparent;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='#212121' stroke-width='2' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: 0 .9em;
+    background-position: 0 0.9em;
     background-size: auto 4px;
     background-repeat: repeat-x;
   }
 }
-
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
+select:-webkit-autofill:focus,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
   // border: none;
   outline: none;
   -webkit-text-fill-color: $black;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -215,7 +211,7 @@ select:-webkit-autofill:focus {
     .word {
       position: absolute;
       width: 200px;
-      margin-left: .3em;
+      margin-left: 0.3em;
       opacity: 0;
     }
 
@@ -267,7 +263,8 @@ select:-webkit-autofill:focus {
     padding-top: 5px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     margin-bottom: 40px;
     width: 50vw;
     min-width: 300px;
@@ -279,12 +276,14 @@ select:-webkit-autofill:focus {
     border-bottom: 3px solid $black;
   }
 
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: $black;
   }
 
-
-  input:focus, textarea:focus, button:focus {
+  button:focus,
+  input:focus,
+  textarea:focus {
     outline: none;
   }
 
@@ -313,7 +312,108 @@ select:-webkit-autofill:focus {
   font-size: 16px;
   line-height: 1.5;
   width: 80vw;
-  margin: 150px auto 0 auto;
+  margin: 150px auto 0;
+
+  &::after,
+  &::before {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    content: "";
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    background-image: linear-gradient(45deg, #212121, #212121);
+    animation: vawe 5s linear infinite;
+  }
+
+  &::before {
+    top: -10%;
+    right: -10%;
+  }
+
+  &::after {
+    bottom: -10%;
+    left: -15%;
+  }
+
+  .dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    span {
+      position: absolute;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #212121, #212121);
+      border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+      animation: vawe 7s linear infinite;
+
+      &:nth-child(1) {
+        top: 15%;
+        left: calc(70%);
+        width: 75px;
+        height: 75px;
+      }
+
+      &:nth-child(2) {
+        top: 55px;
+        left: 180px;
+        width: 50px;
+        height: 50px;
+        border-radius: 38% 62% 33% 67% / 60% 53% 47% 40%;
+        transform: rotate(90deg);
+      }
+
+      &:nth-child(3) {
+        right: 10%;
+        bottom: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+      }
+
+      &:nth-child(4) {
+        bottom: 50px;
+        left: 240px;
+        width: 20px;
+        height: 20px;
+        border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+      }
+
+      &:nth-child(5) {
+        right: 230px;
+        bottom: 110px;
+        width: 25px;
+        height: 25px;
+        border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+      }
+
+      &:nth-child(6) {
+        top: 10%;
+        left: calc(100% - 400px);
+        width: 25px;
+        height: 25px;
+      }
+      @keyframes vawe {
+        20% {
+          border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+        }
+
+        40% {
+          border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+        }
+
+        60% {
+          border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+        }
+
+        80% {
+          border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+        }
+      }
+    }
+  }
 
   .work-desc {
     word-wrap: break-word;
@@ -333,7 +433,7 @@ select:-webkit-autofill:focus {
 .mr-yum {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: .7fr 1.3fr;
+  grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: 750px auto minmax(550px, 750px);
   grid-template-areas: "heading phone-view" "body body" "tablet-view tablet-view";
 }
@@ -358,7 +458,7 @@ select:-webkit-autofill:focus {
 
 .phone-view {
   grid-area: phone-view;
-  background-image: url('/mryum_home.png');
+  background-image: url("/mryum_home.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -366,39 +466,110 @@ select:-webkit-autofill:focus {
   -moz-animation: phoneTransition 10s infinite;
   -o-animation: phoneTransition 10s infinite;
   animation: phoneTransition 10s infinite;
+  @keyframes phoneTransition {
+    0%,
+    100% {
+      background-image: url("/mryum_home.png");
+    }
 
-    @keyframes phoneTransition {
-      0%, 100% { background-image: url('/mryum_home.png') }
-      23% { background-image: url('/mryum_home.png') }
-      33% { background-image: url('/translations.png') }
-      56% { background-image: url('/translations.png') }
-      66% { background-image: url('/definitions.png') }
-      90% { background-image: url('/definitions.png') }
+    23% {
+      background-image: url("/mryum_home.png");
     }
-    @-o-keyframes phoneTransition{
-      0%, 100% { background-image: url('/mryum_home.png') }
-      23% { background-image: url('/mryum_home.png') }
-      33% { background-image: url('/translations.png') }
-      56% { background-image: url('/translations.png') }
-      66% { background-image: url('/definitions.png') }
-      90% { background-image: url('/definitions.png') }
+
+    33% {
+      background-image: url("/translations.png");
     }
-    @-moz-keyframes phoneTransition{
-      0%, 100% { background-image: url('/mryum_home.png') }
-      23% { background-image: url('/mryum_home.png') }
-      33% { background-image: url('/translations.png') }
-      56% { background-image: url('/translations.png') }
-      66% { background-image: url('/definitions.png') }
-      90% { background-image: url('/definitions.png') }
+
+    56% {
+      background-image: url("/translations.png");
     }
-    @-webkit-keyframes phoneTransition{
-      0%, 100% { background-image: url('/mryum_home.png') }
-      23% { background-image: url('/mryum_home.png') }
-      33% { background-image: url('/translations.png') }
-      56% { background-image: url('/translations.png') }
-      66% { background-image: url('/definitions.png') }
-      90% { background-image: url('/definitions.png') }
+
+    66% {
+      background-image: url("/definitions.png");
     }
+
+    90% {
+      background-image: url("/definitions.png");
+    }
+  }
+  @-o-keyframes phoneTransition {
+    0%,
+    100% {
+      background-image: url("/mryum_home.png");
+    }
+
+    23% {
+      background-image: url("/mryum_home.png");
+    }
+
+    33% {
+      background-image: url("/translations.png");
+    }
+
+    56% {
+      background-image: url("/translations.png");
+    }
+
+    66% {
+      background-image: url("/definitions.png");
+    }
+
+    90% {
+      background-image: url("/definitions.png");
+    }
+  }
+  @-moz-keyframes phoneTransition {
+    0%,
+    100% {
+      background-image: url("/mryum_home.png");
+    }
+
+    23% {
+      background-image: url("/mryum_home.png");
+    }
+
+    33% {
+      background-image: url("/translations.png");
+    }
+
+    56% {
+      background-image: url("/translations.png");
+    }
+
+    66% {
+      background-image: url("/definitions.png");
+    }
+
+    90% {
+      background-image: url("/definitions.png");
+    }
+  }
+  @-webkit-keyframes phoneTransition {
+    0%,
+    100% {
+      background-image: url("/mryum_home.png");
+    }
+
+    23% {
+      background-image: url("/mryum_home.png");
+    }
+
+    33% {
+      background-image: url("/translations.png");
+    }
+
+    56% {
+      background-image: url("/translations.png");
+    }
+
+    66% {
+      background-image: url("/definitions.png");
+    }
+
+    90% {
+      background-image: url("/definitions.png");
+    }
+  }
 }
 
 .body {
@@ -419,7 +590,7 @@ select:-webkit-autofill:focus {
 
 .tablet-view {
   grid-area: tablet-view;
-  background-image: url('/hero.png');
+  background-image: url("/hero.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -427,58 +598,153 @@ select:-webkit-autofill:focus {
   -moz-animation: tabletTransition 10s infinite;
   -o-animation: tabletTransition 10s infinite;
   animation: tabletTransition 10s infinite;
+  @keyframes tabletTransition {
+    0%,
+    100% {
+      background-image: url("/hero.png");
+    }
 
-    @keyframes tabletTransition {
-      0%, 100% { background-image: url('/hero.png') }
-      15% { background-image: url('/hero.png') }
-      25% { background-image: url('/images.png') }
-      40% { background-image: url('/images.png') }
-      50% { background-image: url('/footer.png') }
-      65% { background-image: url('/footer.png') }
-      75% { background-image: url('/faq.png') }
-      90% { background-image: url('/faq.png') }
+    15% {
+      background-image: url("/hero.png");
     }
-    @-o-keyframes tabletTransition{
-      0%, 100% { background-image: url('/hero.png') }
-      15% { background-image: url('/hero.png') }
-      25% { background-image: url('/images.png') }
-      40% { background-image: url('/images.png') }
-      50% { background-image: url('/footer.png') }
-      65% { background-image: url('/footer.png') }
-      75% { background-image: url('/faq.png') }
-      90% { background-image: url('/faq.png') }
+
+    25% {
+      background-image: url("/images.png");
     }
-    @-moz-keyframes tabletTransition{
-      0%, 100% { background-image: url('/hero.png') }
-      15% { background-image: url('/hero.png') }
-      25% { background-image: url('/images.png') }
-      40% { background-image: url('/images.png') }
-      50% { background-image: url('/footer.png') }
-      65% { background-image: url('/footer.png') }
-      75% { background-image: url('/faq.png') }
-      90% { background-image: url('/faq.png') }
+
+    40% {
+      background-image: url("/images.png");
     }
-    @-webkit-keyframes tabletTransition{
-      0%, 100% { background-image: url('/hero.png') }
-      15% { background-image: url('/hero.png') }
-      25% { background-image: url('/images.png') }
-      40% { background-image: url('/images.png') }
-      50% { background-image: url('/footer.png') }
-      65% { background-image: url('/footer.png') }
-      75% { background-image: url('/faq.png') }
-      90% { background-image: url('/faq.png') }
+
+    50% {
+      background-image: url("/footer.png");
     }
+
+    65% {
+      background-image: url("/footer.png");
+    }
+
+    75% {
+      background-image: url("/faq.png");
+    }
+
+    90% {
+      background-image: url("/faq.png");
+    }
+  }
+  @-o-keyframes tabletTransition {
+    0%,
+    100% {
+      background-image: url("/hero.png");
+    }
+
+    15% {
+      background-image: url("/hero.png");
+    }
+
+    25% {
+      background-image: url("/images.png");
+    }
+
+    40% {
+      background-image: url("/images.png");
+    }
+
+    50% {
+      background-image: url("/footer.png");
+    }
+
+    65% {
+      background-image: url("/footer.png");
+    }
+
+    75% {
+      background-image: url("/faq.png");
+    }
+
+    90% {
+      background-image: url("/faq.png");
+    }
+  }
+  @-moz-keyframes tabletTransition {
+    0%,
+    100% {
+      background-image: url("/hero.png");
+    }
+
+    15% {
+      background-image: url("/hero.png");
+    }
+
+    25% {
+      background-image: url("/images.png");
+    }
+
+    40% {
+      background-image: url("/images.png");
+    }
+
+    50% {
+      background-image: url("/footer.png");
+    }
+
+    65% {
+      background-image: url("/footer.png");
+    }
+
+    75% {
+      background-image: url("/faq.png");
+    }
+
+    90% {
+      background-image: url("/faq.png");
+    }
+  }
+  @-webkit-keyframes tabletTransition {
+    0%,
+    100% {
+      background-image: url("/hero.png");
+    }
+
+    15% {
+      background-image: url("/hero.png");
+    }
+
+    25% {
+      background-image: url("/images.png");
+    }
+
+    40% {
+      background-image: url("/images.png");
+    }
+
+    50% {
+      background-image: url("/footer.png");
+    }
+
+    65% {
+      background-image: url("/footer.png");
+    }
+
+    75% {
+      background-image: url("/faq.png");
+    }
+
+    90% {
+      background-image: url("/faq.png");
+    }
+  }
 }
 
 .t-a-s {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1.3fr .7fr;
+  grid-template-columns: 1.3fr 0.7fr;
   grid-template-rows: 750px auto minmax(550px, 750px);
   grid-template-areas: "phone-view heading" "body body" "tablet-view tablet-view";
 
   .phone-view {
-    background-image: url('/tas_phone.png');
+    background-image: url("/tas_phone.png");
     background-repeat: no-repeat;
     -webkit-animation: none;
     -moz-animation: none;
@@ -487,14 +753,13 @@ select:-webkit-autofill:focus {
   }
 
   .tablet-view {
-    background-image: url('/tas_tablet.png');
+    background-image: url("/tas_tablet.png");
     -webkit-animation: none;
     -moz-animation: none;
     -o-animation: none;
     animation: none;
   }
 }
-
 @media screen and (max-width: 768px) {
   body {
     // background-color: cyan;
@@ -505,20 +770,19 @@ select:-webkit-autofill:focus {
   }
 
   .home-page {
-
     h1 {
       margin-top: 50px;
       width: 95vw;
     }
 
-    .wrapper{
-      text-align:center;
+    .wrapper {
+      text-align: center;
       position: fixed;
       top: -90px;
       z-index: -1;
     }
 
-    svg{
+    svg {
       margin: 0 auto;
       width: 170vw;
       // height: 140vh;
@@ -526,8 +790,28 @@ select:-webkit-autofill:focus {
   }
 
   .work-page {
-    margin: 0 auto;
-    margin-top: 110px;
+    margin: 110px auto 0;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      content: "";
+      border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+      background-image: linear-gradient(45deg, #212121, #212121);
+      animation: vawe 5s linear infinite;
+    }
+
+    &::before {
+      top: -10%;
+      right: -10%;
+    }
+
+    &::after {
+      bottom: -10%;
+      left: -15%;
+    }
 
     h1 {
       font-size: 52px;
@@ -537,7 +821,8 @@ select:-webkit-autofill:focus {
       width: 70vw;
     }
 
-    .mr-yum, .t-a-s {
+    .mr-yum,
+    .t-a-s {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto 100vh auto 50vh;
@@ -554,6 +839,7 @@ select:-webkit-autofill:focus {
 
         div:nth-of-type(2) {
           padding-top: 30px;
+
           p {
             padding-bottom: 30px;
           }
@@ -564,7 +850,7 @@ select:-webkit-autofill:focus {
     .t-a-s {
       .heading {
         h1 {
-        font-size: 54px;
+          font-size: 54px;
         }
       }
     }
@@ -580,7 +866,8 @@ select:-webkit-autofill:focus {
       padding-left: 15px;
     }
 
-    .form-group, form {
+    .form-group,
+    form {
       width: 80vw;
       margin: 0 auto;
     }
@@ -589,7 +876,8 @@ select:-webkit-autofill:focus {
       width: 50vw;
     }
 
-    input, textarea {
+    input,
+    textarea {
       margin-left: auto;
       margin-right: auto;
       min-width: 0;

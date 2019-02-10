@@ -69,12 +69,15 @@ body {
   background-repeat: no-repeat;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Noe Display", "Georgia", serif;
   font-weight: 900;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-family: "Noe Display", "Georgia", serif;
   font-weight: 900;
   font-size: 120%;
@@ -88,7 +91,7 @@ h1 {
   font-family: "Druk Text Wide", sans-serif;
   position: fixed;
   z-index: 13;
-  top: 0px;
+  top: 0;
   left: 15px;
   font-size: 50px;
   line-height: 0;
@@ -127,15 +130,15 @@ h1 {
 
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
 input:-webkit-autofill:focus textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
 select:-webkit-autofill,
+select:-webkit-autofill:focus,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
   outline: none;
   -webkit-text-fill-color: #212121;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -209,7 +212,8 @@ select:-webkit-autofill:focus {
   font-family: inherit;
   padding-top: 5px;
 }
-.contact-page input, .contact-page textarea {
+.contact-page input,
+.contact-page textarea {
   margin-bottom: 40px;
   width: 50vw;
   min-width: 300px;
@@ -220,10 +224,13 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   border-bottom: 3px solid #212121;
 }
-.contact-page input::placeholder, .contact-page textarea::placeholder {
+.contact-page input::placeholder,
+.contact-page textarea::placeholder {
   color: #212121;
 }
-.contact-page input:focus, .contact-page textarea:focus, .contact-page button:focus {
+.contact-page button:focus,
+.contact-page input:focus,
+.contact-page textarea:focus {
   outline: none;
 }
 .contact-page textarea {
@@ -248,7 +255,93 @@ select:-webkit-autofill:focus {
   font-size: 16px;
   line-height: 1.5;
   width: 80vw;
-  margin: 150px auto 0 auto;
+  margin: 150px auto 0;
+}
+.work-page::after, .work-page::before {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  content: "";
+  border-radius: 54% 46% 42% 58%/60% 58% 42% 40%;
+  background-image: linear-gradient(45deg, #212121, #212121);
+  animation: vawe 5s linear infinite;
+}
+.work-page::before {
+  top: -10%;
+  right: -10%;
+}
+.work-page::after {
+  bottom: -10%;
+  left: -15%;
+}
+.work-page .dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.work-page .dots span {
+  position: absolute;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #212121, #212121);
+  border-radius: 38% 62% 55% 45%/32% 53% 47% 68%;
+  animation: vawe 7s linear infinite;
+}
+.work-page .dots span:nth-child(1) {
+  top: 15%;
+  left: calc(70%);
+  width: 75px;
+  height: 75px;
+}
+.work-page .dots span:nth-child(2) {
+  top: 55px;
+  left: 180px;
+  width: 50px;
+  height: 50px;
+  border-radius: 38% 62% 33% 67%/60% 53% 47% 40%;
+  transform: rotate(90deg);
+}
+.work-page .dots span:nth-child(3) {
+  right: 10%;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 38% 62% 55% 45%/52% 53% 47% 48%;
+}
+.work-page .dots span:nth-child(4) {
+  bottom: 50px;
+  left: 240px;
+  width: 20px;
+  height: 20px;
+  border-radius: 38% 62% 55% 45%/52% 53% 47% 48%;
+}
+.work-page .dots span:nth-child(5) {
+  right: 230px;
+  bottom: 110px;
+  width: 25px;
+  height: 25px;
+  border-radius: 38% 62% 55% 45%/52% 53% 47% 48%;
+}
+.work-page .dots span:nth-child(6) {
+  top: 10%;
+  left: calc(100% - 400px);
+  width: 25px;
+  height: 25px;
+}
+@keyframes vawe {
+  20% {
+    border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+  }
+  40% {
+    border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+  }
+  60% {
+    border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+  }
+  80% {
+    border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;
+  }
 }
 .work-page .work-desc {
   word-wrap: break-word;
@@ -549,8 +642,24 @@ select:-webkit-autofill:focus {
   }
 
   .work-page {
-    margin: 0 auto;
-    margin-top: 110px;
+    margin: 110px auto 0;
+  }
+  .work-page::before, .work-page::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    border-radius: 54% 46% 42% 58%/60% 58% 42% 40%;
+    background-image: linear-gradient(45deg, #212121, #212121);
+    animation: vawe 5s linear infinite;
+  }
+  .work-page::before {
+    top: -10%;
+    right: -10%;
+  }
+  .work-page::after {
+    bottom: -10%;
+    left: -15%;
   }
   .work-page h1 {
     font-size: 52px;
@@ -558,24 +667,29 @@ select:-webkit-autofill:focus {
   .work-page .work-desc {
     width: 70vw;
   }
-  .work-page .mr-yum, .work-page .t-a-s {
+  .work-page .mr-yum,
+.work-page .t-a-s {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 100vh auto 50vh;
     grid-template-areas: "heading" "phone-view" "body" "tablet-view";
   }
-  .work-page .mr-yum .body, .work-page .t-a-s .body {
+  .work-page .mr-yum .body,
+.work-page .t-a-s .body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .work-page .mr-yum .body div, .work-page .t-a-s .body div {
+  .work-page .mr-yum .body div,
+.work-page .t-a-s .body div {
     width: 100%;
   }
-  .work-page .mr-yum .body div:nth-of-type(2), .work-page .t-a-s .body div:nth-of-type(2) {
+  .work-page .mr-yum .body div:nth-of-type(2),
+.work-page .t-a-s .body div:nth-of-type(2) {
     padding-top: 30px;
   }
-  .work-page .mr-yum .body div:nth-of-type(2) p, .work-page .t-a-s .body div:nth-of-type(2) p {
+  .work-page .mr-yum .body div:nth-of-type(2) p,
+.work-page .t-a-s .body div:nth-of-type(2) p {
     padding-bottom: 30px;
   }
   .work-page .t-a-s .heading h1 {
@@ -589,14 +703,16 @@ select:-webkit-autofill:focus {
   .contact-page .text {
     padding-left: 15px;
   }
-  .contact-page .form-group, .contact-page form {
+  .contact-page .form-group,
+.contact-page form {
     width: 80vw;
     margin: 0 auto;
   }
   .contact-page button {
     width: 50vw;
   }
-  .contact-page input, .contact-page textarea {
+  .contact-page input,
+.contact-page textarea {
     margin-left: auto;
     margin-right: auto;
     min-width: 0;
