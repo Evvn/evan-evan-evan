@@ -17,7 +17,7 @@ class Work extends React.Component {
   render() {
     return (<div className="work-page">
 
-      <div class="dots">
+      <div className="dots">
         <span></span>
         <span></span>
         <span></span>
