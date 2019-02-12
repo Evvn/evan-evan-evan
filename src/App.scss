@@ -313,26 +313,29 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
   line-height: 1.5;
   width: 80vw;
   margin: 150px auto 0;
+  overflow-x: hidden;
 
   &::after,
   &::before {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 375px;
+    height: 375px;
     content: "";
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
-    background-image: linear-gradient(45deg, #212121, #212121);
+    background-color: $black;
     animation: vawe 5s linear infinite;
   }
 
   &::before {
-    top: -10%;
-    right: -10%;
+    top: 0%;
+    right: 0%;
+    width: 325px;
+    height: 325px;
   }
 
   &::after {
     bottom: -40%;
-    left: -15%;
+    left: -10%;
   }
 
   .dots {
@@ -346,7 +349,8 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
     span {
       position: absolute;
       border-radius: 50%;
-      background-image: linear-gradient(45deg, #212121, #212121);
+      background-color: $black;
+      background-blend-mode: darken;
       border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
       animation: vawe 7s linear infinite;
 
@@ -367,7 +371,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
       }
 
       &:nth-child(3) {
-        right: 10%;
+        right: 2%;
         bottom: 20px;
         width: 80px;
         height: 80px;
@@ -375,7 +379,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
       }
 
       &:nth-child(4) {
-        bottom: 50px;
+        bottom: 90px;
         left: 200px;
         width: 20px;
         height: 20px;
@@ -420,6 +424,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
     word-wrap: break-word;
     width: 40vw;
     margin: 10px auto;
+    color: $black;
   }
 
   h1 {
