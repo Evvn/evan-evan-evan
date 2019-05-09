@@ -7,7 +7,7 @@ class MrYum extends React.Component {
         <div className="heading">
           <h1>Mr Yum</h1>
           <h3>Lead Front End Developer</h3>
-          <h3>React, AWS, Airtable</h3>
+          <h3>React, Redux, Stripe Payments</h3>
         </div>
 
         <div className="body">
