@@ -33,8 +33,8 @@ class MrYum extends React.Component {
               on AWS
             </p>
             <p>
-              <b>&rarr;</b> Multi-language support of 5+ languages via Google
-              Cloud Translate API
+              <b>&rarr;</b> Payment processing using Stripe API, POS integration
+              using Doshii
             </p>
           </div>
 
