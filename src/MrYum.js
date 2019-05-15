@@ -12,7 +12,7 @@ class MrYum extends React.Component {
 
         <div className="body">
           <div>
-            <p>
+            {/* <p>
               Mr Yum is a web application developed for the hospitality industry
               to replace print menus with mobile visual menus. The application
               is launched via QR code scan and the menu information is displayed
@@ -20,10 +20,22 @@ class MrYum extends React.Component {
               their phone. My role in this project was as the lead front end
               developer, working closely with our creative director and product
               team.
+              </p> */}
+
+            <p>
+              Mr Yum is a React web application developed to redefine the
+              ordering experience in the hospitality industry. Launched via QR
+              code scan, Mr Yum allows users to search, filter, and translate
+              the entirety of the menu. Mr Yum also supports Point of Sale
+              integration using Doshii, allowing users to place their order and
+              pay from their phone. Payments are handled securely with Stripe,
+              and the user has the option of paying with Apple Pay, Google Pay,
+              or by scanning their card.
             </p>
           </div>
 
           <div>
+            <p>Mr Yum features include...</p>
             <p>
               <b>&rarr;</b> Global state management using Redux and Saga for
               React.
@@ -39,9 +51,14 @@ class MrYum extends React.Component {
           </div>
 
           <div>
-            <p>
-              The application was built using the ReactJS to create a fluid user
+            {/* <p>
+              The application was built using ReactJS to create a fluid user
               experience similar to a native mobile application.
+            </p> */}
+            <p>
+              With 1,000 daily users across 50+ venues in Melbourne, Mr Yum has
+              been gaining attention from the media, venue owners, and investors
+              (1.2 million in seed funding!) -{" "}
             </p>
             <p>
               <strong>See Mr Yum in the media:</strong>
