@@ -35,14 +35,17 @@ class MrYum extends React.Component {
           </div>
 
           <div>
-            <p>Mr Yum features include...</p>
+            <p>My work on Mr Yum includes...</p>
             <p>
               <b>&rarr;</b> Global state management using Redux and Saga for
-              React.
+              React
             </p>
             <p>
               <b>&rarr;</b> Backend-for-frontend server with bespoke API hosted
               on AWS
+            </p>
+            <p>
+              <b>&rarr;</b> Phone number verification over SMS using Twilio
             </p>
             <p>
               <b>&rarr;</b> Payment processing using Stripe API, POS integration
@@ -58,7 +61,9 @@ class MrYum extends React.Component {
             <p>
               With 1,000 daily users across 50+ venues in Melbourne, Mr Yum has
               been gaining attention from the media, venue owners, and investors
-              (1.2 million in seed funding!) -{" "}
+              (1.2 million in seed funding!). We're currently handling 100% of
+              the food orders at Federation Square's pop-up Winter Village, open
+              for the next 4 months.
             </p>
             <p>
               <strong>See Mr Yum in the media:</strong>
