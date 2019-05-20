@@ -25,31 +25,38 @@ class MrYum extends React.Component {
             <p>
               Mr Yum is a React web application developed to redefine the
               ordering experience in the hospitality industry. Launched via QR
-              code scan, Mr Yum allows users to search, filter, and translate
-              the entirety of the menu. Mr Yum also supports Point of Sale
-              integration using Doshii, allowing users to place their order and
-              pay from their phone. Payments are handled securely with Stripe,
-              and the user has the option of paying with Apple Pay, Google Pay,
-              or by scanning their card.
+              code scan, it allows users to search, filter, and translate the
+              entirety of the menu. Mr Yum also supports Point of Sale
+              integration using Doshii, giving users the ability to place their
+              order and pay from their phone. Payments are handled securely with
+              Stripe, and customers have the option of paying with Apple Pay,
+              Google Pay, or scanning their card.
             </p>
+            <br />
+            <br />
+            <p>My work on Mr Yum includes...</p>
           </div>
 
           <div>
-            <p>My work on Mr Yum includes...</p>
             <p>
-              <b>&rarr;</b> Global state management using Redux and Saga for
-              React
+              <b>&rarr;</b> Global state management using Redux for improved
+              performance, conditional rendering, and storing persistent
+              customer information
             </p>
             <p>
-              <b>&rarr;</b> Backend-for-frontend server with bespoke API hosted
-              on AWS
+              <b>&rarr;</b> Writing Redux-Saga functions to handle API calls to
+              our express API. These are used for fetching menu information,
+              handling Stripe payments, and triggering SMS notifications and
+              phone number verification
             </p>
             <p>
-              <b>&rarr;</b> Phone number verification over SMS using Twilio
+              <b>&rarr;</b> Creating routes on our backend-for-frontend server
+              with bespoke API hosted on AWS, and engineering the payloads for
+              use in the applications front end
             </p>
             <p>
-              <b>&rarr;</b> Payment processing using Stripe API, POS integration
-              using Doshii
+              <b>&rarr;</b> Secure payment processing using Stripe API, POS
+              integration using Doshii
             </p>
           </div>
 
@@ -59,13 +66,14 @@ class MrYum extends React.Component {
               experience similar to a native mobile application.
             </p> */}
             <p>
-              With 1,000 daily users across 50+ venues in Melbourne, Mr Yum has
-              been gaining attention from the media, venue owners, and investors
-              (1.2 million in seed funding!). We're currently handling 100% of
-              the food orders at Federation Square's pop-up Winter Village, open
-              for the next 4 months.
+              With 1,000 daily users across 50+ venues in Melbourne, Mr Yum is
+              gaining attention from media, venue owners, and investors (1.2
+              million in seed funding!). We're currently handling 100% of the
+              food orders at Federation Square's pop-up Winter Village, open for
+              the next 4 months.
             </p>
             <p>
+              <br />
               <strong>See Mr Yum in the media:</strong>
             </p>
             <p>
@@ -76,6 +84,15 @@ class MrYum extends React.Component {
             <p>
               <a href="https://www.broadsheet.com.au/melbourne/food-and-drink/article/mr-yum-wants-cure-your-food-envy">
                 Mr Yum in Broadsheet
+              </a>
+            </p>
+            <br />
+            <p>
+              <strong>Try it out!</strong>
+            </p>
+            <p>
+              <a href="https://www.mryum.com.au/proudmary">
+                Proud Mary on Mr Yum
               </a>
             </p>
           </div>

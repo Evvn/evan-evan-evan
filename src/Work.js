@@ -1,6 +1,6 @@
 import React from "react";
 import MrYum from "./MrYum.js";
-import TalkAboutSomething from "./TalkAboutSomething.js";
+// import TalkAboutSomething from "./TalkAboutSomething.js";
 
 class Work extends React.Component {
   bikeOn() {
@@ -28,19 +28,16 @@ class Work extends React.Component {
         <h1 className="work-header">Work</h1>
 
         <p className="work-desc">
-          My name is Evan, and I'm a developer currently living in Melbourne.
-          I'm happiest building front end web projects with React and
-          cross-platform mobile applications utilizing React Native + Expo, but
-          I've also had experience in doing backend work with Node Express
-          servers.
+          My name is <b>Evan</b>, and I'm a front end developer currently living
+          in Melbourne. I've most recently been a contractor at a start-up
+          accelerator, working closely with their design and product teams to
+          build a cross-platform web application with <b>React</b>.
         </p>
 
         <p className="work-desc">
-          My most recent role has been working as the lead front end developer
-          on a mobile web application built with React/Redux/Saga with a lean
-          backend using an Express server Ec2 instance to handle API calls, and
-          a Postgres server to manage content; all hosted and distributed with
-          AWS.
+          My most recent role has seen me as the lead front end developer on a
+          mobile web application called Mr Yum built with React/Redux/Saga; you
+          can read more about that further down this page.
         </p>
 
         <p className="work-desc">
@@ -54,7 +51,7 @@ class Work extends React.Component {
 
         <MrYum />
 
-        <TalkAboutSomething />
+        {/* <TalkAboutSomething /> */}
       </div>
     );
   }
