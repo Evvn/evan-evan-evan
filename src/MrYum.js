@@ -51,7 +51,7 @@ class MrYum extends React.Component {
             </p>
             <p>
               <b>&rarr;</b> Creating routes on our backend-for-frontend server
-              with bespoke API hosted on AWS, and engineering the payloads for
+              with a bespoke API hosted on AWS, and engineering the payloads for
               use in the applications front end
             </p>
             <p>
